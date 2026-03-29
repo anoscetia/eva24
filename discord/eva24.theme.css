@@ -1,0 +1,198 @@
+/**
+ * @name eva24
+ * @description a tui-style discord theme based on system24 — styled with the eva24 palette.
+ * @author fyrr
+ * @version 1.0.0
+*/
+
+/* import system24 base structure */
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    --font: 'DM Mono';
+    --code-font: 'DM Mono';
+    font-weight: 300;
+    letter-spacing: -0.05ch;
+
+    /* sizes */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --border-hover-transition: 0.2s ease;
+
+    /* animation */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+
+    /* top bar */
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+
+    /* window controls */
+    --custom-window-controls: off;
+    --window-control-size: 14px;
+
+    /* dms button */
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url('');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2));
+
+    /* background image */
+    --background-image: off;
+    --background-image-url: url('');
+
+    /* transparency */
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+
+    /* other */
+    --small-user-panel: on;
+    --unrounding: on;
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: off;
+    --panel-labels: on;
+    --label-color: #6e6a86;
+    --label-font-weight: 500;
+}
+
+/* color options */
+:root {
+    --colors: on;
+
+    /* text colors */
+    --text-0: var(--bg-4);        /* text on colored elements */
+    --text-1: #ffffff;             /* white text */
+    --text-2: #e0def4;             /* headings */
+    --text-3: #d4d0ea;             /* normal text — brighter for readability */
+    --text-4: #908caa;             /* icon buttons and channels */
+    --text-5: #6e6a86;             /* muted channels and timestamps */
+
+    /* background colors — based on #1a1a1a scale */
+    --bg-1: #2a2a2a;               /* dark buttons when clicked */
+    --bg-2: #222222;               /* dark buttons / overlay */
+    --bg-3: #1e1e1e;               /* spacing, secondary elements */
+    --bg-4: #1a1a1a;               /* main background */
+    --hover: rgba(180, 135, 213, 0.07);   /* eva01 purple tint on hover */
+    --active: rgba(180, 135, 213, 0.14);  /* eva01 purple tint on active/selected */
+    --active-2: rgba(180, 135, 213, 0.22);
+    --message-hover: transparent;
+
+    /* accent colors — eva01 purple for buttons, rei blue for text/links */
+    --accent-1: #c9a0e3;           /* links and accent text (lighter purple) */
+    --accent-2: #b487d5;           /* eva01 — small accent elements */
+    --accent-3: #b487d5;           /* accent buttons — eva01 purple */
+    --accent-4: #9a6bc4;           /* accent buttons hovered */
+    --accent-5: #8354b0;           /* accent buttons clicked */
+    --accent-new: #eb6f92;         /* mute/deafen — love red */
+
+    /* mention and reply gradients */
+    --mention: linear-gradient(to right, rgba(235, 111, 146, 0.08) 40%, transparent);
+    --mention-hover: linear-gradient(to right, rgba(235, 111, 146, 0.04) 40%, transparent);
+    --reply: linear-gradient(to right, rgba(144, 140, 170, 0.08) 40%, transparent);
+    --reply-hover: linear-gradient(to right, rgba(144, 140, 170, 0.04) 40%, transparent);
+
+    /* status colors */
+    --online: #9ccfd8;             /* foam cyan — online */
+    --dnd: #eb6f92;                /* love red — do not disturb */
+    --idle: #f6c177;               /* gold — idle */
+    --streaming: #b487d5;          /* eva01 purple — streaming */
+    --offline: #6e6a86;            /* muted — offline */
+
+    /* borders */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: #b487d5;       /* eva01 purple on panel hover */
+    --button-border: rgba(255, 255, 255, 0.08);
+
+    /* base color scales */
+    --red-1: #f08ba8;
+    --red-2: #eb6f92;              /* love */
+    --red-3: #d45a7a;
+    --red-4: #b84568;
+    --red-5: #9c3055;
+
+    --green-1: #b8e8ef;
+    --green-2: #9ccfd8;            /* foam */
+    --green-3: #7eb8c2;
+    --green-4: #60a1ac;
+    --green-5: #428a96;
+
+    --blue-1: #a8d4f5;
+    --blue-2: #81bbeb;             /* rei */
+    --blue-3: #62a3db;
+    --blue-4: #438bcb;
+    --blue-5: #2473bb;
+
+    --yellow-1: #fbe0a8;
+    --yellow-2: #f6c177;           /* gold */
+    --yellow-3: #e8a84e;
+    --yellow-4: #d08f25;
+    --yellow-5: #b87600;
+
+    --purple-1: #c9a0e3;
+    --purple-2: #b487d5;           /* eva01 */
+    --purple-3: #9a6bc4;
+    --purple-4: #8354b0;
+    --purple-5: #6e3d9a;
+}
+
+/* -----------------------------------------------
+   headings — same structure as obsidian eva24
+   h1: #e6122b  red
+   h2: #e58fce  rose
+   h3: #f6c177  gold
+   h4: #81bbeb  rei blue
+   h5: #b487d5  eva01 purple
+----------------------------------------------- */
+h1, [class*="markup"] h1 { color: #e6122b !important; }
+h2, [class*="markup"] h2 { color: #e58fce !important; }
+h3, [class*="markup"] h3 { color: #f6c177 !important; }
+h4, [class*="markup"] h4 { color: #81bbeb !important; }
+h5, [class*="markup"] h5 { color: #b487d5 !important; }
+h6, [class*="markup"] h6 { color: #908caa !important; }
+
+/* -----------------------------------------------
+   menu / panel text — muted by default, white on hover
+----------------------------------------------- */
+[class*="name_"],
+[class*="title_"],
+[class*="channelName_"],
+[class*="header_"],
+[class*="category_"],
+[class*="username_"],
+[class*="titleDefault_"] {
+    color: #6e6a86;
+}
+
+[class*="name_"]:hover,
+[class*="title_"]:hover,
+[class*="channelName_"]:hover,
+[class*="header_"]:hover,
+[class*="category_"]:hover,
+[class*="username_"]:hover,
+[class*="titleDefault_"]:hover {
+    color: #ffffff !important;
+}
+
+/* interactive menu items — muted at rest, white on hover */
+[class*="item_"][class*="clickable_"] {
+    color: #6e6a86;
+}
+[class*="item_"][class*="clickable_"]:hover {
+    color: #ffffff;
+}
+
+
