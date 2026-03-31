@@ -65,6 +65,7 @@ body {
     --ascii-loader: off;
     --panel-labels: on;
     --label-color: #6e6a86;
+    --label-hover-color: #908caa;
     --label-font-weight: 500;
 }
 
@@ -157,7 +158,11 @@ body {
    h4: #81bbeb  rei blue
    h5: #b487d5  eva01 purple
 ----------------------------------------------- */
-h1, [class*="markup"] h1 { color: #e6122b !important; }
+[class*="markup"] h1 { color: #e6122b !important; }
+[class*="side_"] h1,
+[class*="header_"] h1,
+[class*="sidebarRegionScroller"] h1,
+[class*="contentRegion"] h1 { color: #908caa !important; }
 h2, [class*="markup"] h2 { color: #e58fce !important; }
 h3, [class*="markup"] h3 { color: #f6c177 !important; }
 h4, [class*="markup"] h4 { color: #81bbeb !important; }
@@ -184,7 +189,7 @@ h6, [class*="markup"] h6 { color: #908caa !important; }
 [class*="category_"]:hover,
 [class*="username_"]:hover,
 [class*="titleDefault_"]:hover {
-    color: #ffffff !important;
+    color: #ffffff !important
 }
 
 /* interactive menu items — muted at rest, white on hover */
@@ -194,5 +199,3 @@ h6, [class*="markup"] h6 { color: #908caa !important; }
 [class*="item_"][class*="clickable_"]:hover {
     color: #ffffff;
 }
-
-
