@@ -105,13 +105,7 @@ the full palette (including the 16 terminal colors) lives in `eva24.conf` — a 
 
 ---
 
-## files in this repo
 
-```
-eva24/
-├── starship.toml     # starship prompt config
-├── eva24.conf        # kitty terminal theme
-└── README.md
-```
 
----
+
+
