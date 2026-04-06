@@ -72,7 +72,7 @@ user@hostname   directory   branch   git status
 | `user@hostname` | rei blue `#81bbeb` | who you are and what machine you're on |
 | `directory` | eva01 purple `#b487d5` | current folder (truncated to 3 levels) |
 | `git branch` | gold `#f6c177` | active git branch — only shows inside a git repo |
-| `git status` | love `#eb6f92` | repo state — shows symbols when there's something to act on |
+| `git status` | asuka `#eb6f92` | repo state — shows symbols when there's something to act on |
 | `❯` | purple / red on error | command prompt — red means the last command failed |
 
 **git status symbols:**
