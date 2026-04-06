@@ -1,6 +1,6 @@
 # eva24 — starship prompt theme
 
-> a starship prompt config built around the eva24 color palette — itself derived from rosé pine, tuned for a dark terminal aesthetic.
+> a starship prompt config built around the eva24 color palette.
 
 [what is starship?](#what-is-starship) • [requirements](#requirements) • [quick start](#quick-start) • [what the prompt shows](#what-the-prompt-shows) • [colors](#colors)
 
