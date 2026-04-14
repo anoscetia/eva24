@@ -4,6 +4,11 @@ a dark evangelion-palette theme for [zed](https://zed.dev).
 
 part of the [eva24 collection](https://github.com/anoscetia/eva24).
 
+## preview
+
+![screenshot 2026-04-14 at 21 55 53](https://github.com/user-attachments/assets/bab8525a-f9f5-4bcf-89f8-cd29487419ad)
+
+
 ## install
 
 ### from source (dev extension)
