@@ -1,8 +1,8 @@
 # eva24
 
-a dark evangelion-palette theme for [zed](https://zed.dev).
+a dark evangelion-palette theme for [zed](https://zed.dev)
 
-part of the [eva24 collection](https://github.com/anoscetia/eva24).
+part of the [eva24 collection](https://github.com/anoscetia/eva24)
 
 ## preview
 
