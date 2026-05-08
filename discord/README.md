@@ -77,4 +77,4 @@ ships with [dm mono](https://fonts.google.com/specimen/DM+Mono), applied to inte
 
 ## credits
 
-based on [system24](https://github.com/refact0r/system24) by refact0r.
+based on [system24](https://github.com/refact0r/system24) by refact0r
