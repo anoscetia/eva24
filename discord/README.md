@@ -1,6 +1,6 @@
 # eva24
 
-a dark evangelion-palette theme for [discord](https://discord.com), built on top of [system24](https://github.com/refact0r/system24) by refact0r.
+a dark evangelion-palette theme for [discord](https://discord.com).
 
 part of the [eva24 collection](https://github.com/anoscetia/eva24).
 
