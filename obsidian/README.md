@@ -2,8 +2,6 @@
 
 dark theme for [obsidian](https://obsidian.md), extending the visual language of [fyrr.me](https://fyrr.me)
 
-notes in the margins, colored headings, bordered tags, left-bar callouts
-
 ## preview
 
 <img width="1814" height="1058" alt="prev1" src="https://github.com/user-attachments/assets/943d62cd-8b9b-4635-81fc-9b83d1fd4918" />
