@@ -6,7 +6,7 @@ part of the [eva24 collection](https://github.com/anoscetia/eva24).
 
 ## preview
 
-![preview](./assets/preview.png)
+<img width="3024" height="1764" alt="screenshot 2026-04-15 at 18 39 28" src="https://github.com/user-attachments/assets/701a4033-a5be-4d46-a042-839a3cb6c653" />
 
 ## install
 
