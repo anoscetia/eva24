@@ -1,6 +1,6 @@
 # marginalia
 
-a dark theme for [obsidian](https://obsidian.md), extending the visual language of [fyrr.me](https://fyrr.me)
+dark theme for [obsidian](https://obsidian.md), extending the visual language of [fyrr.me](https://fyrr.me)
 
 notes in the margins, colored headings, bordered tags, left-bar callouts
 
